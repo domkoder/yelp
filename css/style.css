@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* utilities */
+.container {
+  margin: auto;
+  padding: 0 10rem;
+}
+
+/* Showcase */
+#showcase {
+  background: url(../images/showcase.jpg) center center/cover;
+  height: 75vh;
+}
+
+/* nav */
+#navigation {
+  padding-top: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navigation ul,
+#showcase ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navigation .item,
+#navigation .sign-up {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+#navigation .item:hover {
+  border-bottom: 2px solid white;
+}
+
+#navigation .sign-up {
+  margin-left: 0.7rem;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+#navigation .sign-up:hover {
+  color: black;
+  background: white;
+}
+
+/* Logo */
+#showcase .showcase-content {
+  padding-top: 6rem;
+}
+
+#showcase .logo {
+  text-align: center;
+}
+
+/* Form */
+#showcase form {
+  margin-top: 2.4rem;
+}
+
+#showcase .form-inline {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.form-inline button {
+  flex: 1;
+}
+.line {
+  border-left: 1px solid lightgray;
+}
+#showcase .form-control {
+  width: 100%;
+  flex: 10;
+  padding: 0.2rem 0.8rem;
+  margin: 0.4rem 0;
+}
+
+.form-control label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-right: 0.5rem;
+  color: #666;
+}
+
+.form-control input {
+  outline: none;
+  font-size: 1.1rem;
+  border: none;
+  width: 300px;
+  line-height: 1.5;
+}
+
+#showcase button {
+  padding: 0.99rem 0.7rem;
+  border-radius: 0 5px 5px 0;
+  color: white;
+  background: #d33b28;
+  border: none;
+}
+
+#showcase .category {
+  margin: 1.5rem;
+  color: white;
+}
+
+.category li {
+  padding-right: 1rem;
+}
+
+.category a {
+  font-weight: bold;
+  color: white;
+  font: 0.87rem;
+  padding: 0.4rem;
+}
+
+#find {
+  background: #f5f5f5;
+  height: 30vh;
+}

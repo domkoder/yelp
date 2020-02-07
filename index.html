@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <title>Yelp-Home</title>
+  </head>
+  <body>
+    <header id="showcase">
+      <nav id="navigation" class="container">
+        <ul>
+          <li><a class="item" href="#"> Write a Review</a></li>
+          <li><a class="item" href="#"> Events </a></li>
+          <li><a class="item" href="#"> Talk </a></li>
+        </ul>
+
+        <ul>
+          <li><a class="item" href="#"> Log In</a></li>
+          <li><a class="sign-up" href="#"> Sign Up </a></li>
+        </ul>
+      </nav>
+
+      <div class="container showcase-content">
+        <div class="logo">
+          <img src="images/logo.png" alt="Logo" />
+        </div>
+
+        <form action="">
+          <div class="form-inline">
+            <div class="form-control">
+              <label for="find">Find</label>
+              <input
+                type="text"
+                placeholder="burgers, Barbers, Plumbers, Hvac..."
+              />
+            </div>
+
+            <div class="form-control line">
+              <label for="find">Near</label>
+              <input type="text" placeholder="San Francisco, CA" />
+            </div>
+
+            <button type="submit"><i class="fas fa-search 3x"></i></button>
+          </div>
+        </form>
+
+        <ul class="category">
+          <li>
+            <i class="fab fa-affiliatetheme"></i>
+            <a class="item" href="#">Plumbers</a>
+          </li>
+          <li>
+            <i class="fas fa-utensils"></i>
+            <a class="item" href="#">Restaurants</a>
+          </li>
+          <li><i class="fas fa-home"></i><a href="#">Home Services</a></li>
+
+          <li><i class="fas fa-air-freshener"></i><a href="#">Delivery</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="find">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </section>
+  </body>
+</html>
