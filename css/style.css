@@ -1,3 +1,10 @@
+:root {
+  --light-gray: #666;
+  --primary-color: #d33b28;
+  --secondary-color: #222277;
+  --orange: #ed5c2e;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -20,13 +27,58 @@ a {
 /* utilities */
 .container {
   margin: auto;
+  max-width: 1300px;
+  margin: auto;
   padding: 0 10rem;
+}
+
+.heading {
+  color: #d33b28;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.item-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item,
+.sign-up {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+.item:hover {
+  border-bottom: 2px solid white;
+}
+
+.flex-container {
+  width: 100%;
+  display: flex;
+}
+
+.box {
+  margin: 15px;
+  flex: 1;
+  background: white;
+  border-radius: 3px;
+}
+
+.box-content {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 0.8rem;
+  color: #2277c7;
 }
 
 /* Showcase */
 #showcase {
   background: url(../images/showcase.jpg) center center/cover;
-  height: 75vh;
+  height: 500px;
 }
 
 /* nav */
@@ -35,25 +87,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-#navigation ul,
-#showcase ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#navigation .item,
-#navigation .sign-up {
-  font-size: 0.9rem;
-  padding: 0.5rem 1rem;
-  color: white;
-  font-weight: bold;
-}
-
-#navigation .item:hover {
-  border-bottom: 2px solid white;
 }
 
 #navigation .sign-up {
@@ -102,6 +135,14 @@ a {
   margin: 0.4rem 0;
 }
 
+.gray {
+  color: var(--light-gray);
+}
+
+.orange {
+  color: var(--orange);
+}
+
 .form-control label {
   font-size: 1.1rem;
   font-weight: bold;
@@ -109,11 +150,14 @@ a {
   color: #666;
 }
 
+.stars i {
+  color: #d33b28;
+}
+
 .form-control input {
   outline: none;
   font-size: 1.1rem;
   border: none;
-  width: 300px;
   line-height: 1.5;
 }
 
@@ -143,5 +187,66 @@ a {
 
 #find {
   background: #f5f5f5;
-  height: 30vh;
+  padding: 1rem 0;
+}
+
+#find .box img {
+  border-radius: 3px;
+  width: 100%;
+}
+
+#find a {
+  display: block;
+  text-align: center;
+  color: black;
+  padding-bottom: 0.5rem;
+}
+
+#find a:hover {
+  color: #0073bb;
+  box-shadow: 2px 3px 12px 2px rgba(128, 128, 128, 0.49);
+}
+
+/* Yelp */
+#yelp .item-flex {
+  border-bottom: 1px solid rgb(195, 193, 193);
+}
+
+#yelp .item {
+  color: #666;
+  display: inline-block;
+}
+
+#yelp .item:hover {
+  border-bottom: 2px solid #d33b28;
+}
+
+#yelp .heading {
+  padding-bottom: 0;
+  padding-top: 2rem;
+}
+
+#yelp .flex-container {
+  align-items: stretch;
+}
+
+#yelp .box a img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+#yelp .box {
+  border: 1px solid rgb(195, 193, 193);
+  border-top: none;
+}
+
+#yelp .box-content h3 {
+  font-size: 0.97rem;
+}
+
+#yelp .reviews {
+  padding: 0.3rem 0;
+  color: #333;
 }

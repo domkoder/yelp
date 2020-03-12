@@ -5,22 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
     <title>Yelp-Home</title>
   </head>
   <body>
     <header id="showcase">
       <nav id="navigation" class="container">
-        <ul>
+        <ul class="item-flex">
           <li><a class="item" href="#"> Write a Review</a></li>
           <li><a class="item" href="#"> Events </a></li>
           <li><a class="item" href="#"> Talk </a></li>
         </ul>
 
-        <ul>
+        <ul class="item-flex">
           <li><a class="item" href="#"> Log In</a></li>
           <li><a class="sign-up" href="#"> Sign Up </a></li>
         </ul>
@@ -35,10 +32,7 @@
           <div class="form-inline">
             <div class="form-control">
               <label for="find">Find</label>
-              <input
-                type="text"
-                placeholder="burgers, Barbers, Plumbers, Hvac..."
-              />
+              <input type="text" placeholder="burgers, Barbers, Plumbers, Hvac..." />
             </div>
 
             <div class="form-control line">
@@ -50,7 +44,7 @@
           </div>
         </form>
 
-        <ul class="category">
+        <ul class="category item-flex">
           <li>
             <i class="fab fa-affiliatetheme"></i>
             <a class="item" href="#">Plumbers</a>
@@ -59,17 +53,144 @@
             <i class="fas fa-utensils"></i>
             <a class="item" href="#">Restaurants</a>
           </li>
-          <li><i class="fas fa-home"></i><a href="#">Home Services</a></li>
+          <li><i class="fas fa-home"></i><a class="item" href="#">Home Services</a></li>
 
-          <li><i class="fas fa-air-freshener"></i><a href="#">Delivery</a></li>
+          <li><i class="fas fa-air-freshener"></i><a class="item" href="#">Delivery</a></li>
         </ul>
       </div>
     </header>
 
     <section id="find">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
+      <div class="container">
+        <h2 class="heading">Find the Best Businesses in Town</h2>
+        <div class="flex-container">
+          <div class="box">
+            <a href="#">
+              <img src="images/find.jpg" alt="Find Businesses" srcset="" />
+              <h3>Phone Repair</h3>
+            </a>
+          </div>
+
+          <div class="box">
+            <a href="#">
+              <img src="images/find.jpg" alt="Find Businesses" srcset="" />
+              <h3>Movers</h3>
+            </a>
+          </div>
+
+          <div class="box">
+            <a href="#">
+              <img src="images/find.jpg" alt="Find Businesses" srcset="" />
+              <h3>Locksmith</h3>
+            </a>
+          </div>
+
+          <div class="box">
+            <a href="#">
+              <img src="images/find.jpg" alt="Find Businesses" srcset="" />
+              <h3>Hotels</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="yelp">
+      <div class="container">
+        <h3 class="heading">Yelp San Francisco</h3>
+        <ul class="item-flex">
+          <li><a class="item" href="#">New York</a></li>
+          <li><a class="item" href="#">San Jose</a></li>
+          <li><a class="item" href="#">Los Angeles</a></li>
+          <li><a class="item" href="#">Chicago</a></li>
+        </ul>
+
+        <h4 class="heading">Hot & New Businesses</h4>
+
+        <div class="flex-container">
+          <div class="box">
+            <a href="#">
+              <img src="images/hot.jpg" alt="Find Businesses" srcset="" />
+
+              <div class="box-content">
+                <h3>Fisher Loft</h3>
+                <span class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <small class="gray">30 reviews</small>
+                </span>
+                <p class="reviews">
+                  Cocktail Bars, Breakfast & Brunch, American (Traditional) Union Square
+                </p>
+                <span class="orange"><i class="fab fa-gripfire"></i> Opened 4 weeks ago</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="box">
+            <a href="#">
+              <img src="images/hot.jpg" alt="Find Businesses" srcset="" />
+              <div class="box-content">
+                <h3>Fisher Loft</h3>
+                <span class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <small class="gray">26 reviews</small>
+                </span>
+                <p class="reviews">
+                  Cocktail Bars, Breakfast & Brunch, American (Traditional)
+                </p>
+                <span class="orange"><i class="fab fa-gripfire"></i> Opened 4 weeks ago</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="box">
+            <a href="#">
+              <img src="images/hot.jpg" alt="Find Businesses" srcset="" />
+              <div class="box-content">
+                <h3>Fisher Loft</h3>
+                <span class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <small class="gray">10 reviews</small>
+                </span>
+                <p class="reviews">
+                  Cocktail Bars, Breakfast & Brunch, American (Traditional) Union Square
+                </p>
+                <span class="orange"><i class="fab fa-gripfire"></i> Opened 4 weeks ago</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex-container">
+          <div>
+            <h4>The Local Yelp</h4>
+            <img src="images/h.png" alt="The Local Yelp" />
+            <div>
+              <h4>Drinks for Valentine's Day</h4>
+              <p>The Local Yelp</p>
+            </div>
+            <a href="#">See more</a>
+          </div>
+
+          <div>
+            <h4>Event Spotlight</h4>
+            <img src="images/300s.jpg" alt="Event Spotlight" />
+            <div>
+              <h4>Winter's Sunday Matinee</h4>
+              <p>Sun, Mar 1, 4:00 pm - 6:30 pm</p>
+            </div>
+            <a href="#">See all events</a>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
